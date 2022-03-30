@@ -20,5 +20,5 @@ if (process.env.FRONTEND_PORT) {
     port = process.env.FRONTEND_PORT;
 }
 
-app.listen(port)
+app.listen(port, () => console.log(`Listening on ${port}`))
 
